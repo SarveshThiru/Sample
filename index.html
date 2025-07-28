@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SIMATS TRANSPORTS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <span class="logo">SIMATS TRANSPORTS</span>
+    <ul>
+      <li><a href="#" id="nav-home">Home</a></li>
+      <li><a href="#" id="nav-pass">Pass Details</a></li>
+      <li><a href="#" id="nav-request">New Pass Request</a></li>
+      <li><a href="#" id="nav-logout">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Login Form -->
+    <section id="login-section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="text" id="user-id" placeholder="Enter Staff ID / Student ID" required>
+        <input type="password" id="password" placeholder="Enter Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <!-- Pass Status Table -->
+    <section id="status-section" class="hidden">
+      <h2>Payment Status</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>User Id</th>
+            <th>Bus Route</th>
+            <th>Payment</th>
+            <th>Admin Approval</th>
+          </tr>
+        </thead>
+        <tbody id="status-table-body">
+          <!-- Populated by JS -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Pass Request Form -->
+    <section id="request-section" class="hidden">
+      <h2>Pass Request</h2>
+      <form id="request-form">
+        <input type="text" id="route-name" placeholder="Enter Route Name" required>
+        <input type="text" id="bus-number" placeholder="Enter Bus Route Number" required>
+        <input type="text" id="boarding-point" placeholder="Enter Boarding Point" required>
+        <input type="text" id="drop-point" placeholder="Choose Drop Point" required>
+        <input type="text" id="amount" placeholder="Amount" required>
+        <button type="submit">Payment</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © SIMATS - 2024
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
